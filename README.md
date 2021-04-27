@@ -1,2 +1,2 @@
 # tgpl
-The go programming language
+The go programming language exercises
