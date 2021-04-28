@@ -1,7 +1,17 @@
+/*
+Exercise 1.2 Modify the echo program to print the index and value of each of its arguments, one per line
+*/
+
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 func main() {
-	fmt.Println("2")
+
+	for idx, arg := range os.Args[1:] {
+		fmt.Printf("%d\t%s\n", idx, arg)
+	}
 }
